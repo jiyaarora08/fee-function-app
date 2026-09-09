@@ -1,6 +1,5 @@
 # Architecture notes
 
-The intended image for this folder is `docs/architecture_diagram.png`.
 
 <img width="663" height="540" alt="image" src="https://github.com/user-attachments/assets/0706a937-0963-40f7-8f70-036f2cce4785" />
 
