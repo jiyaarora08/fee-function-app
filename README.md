@@ -77,7 +77,7 @@ fee-function-app/
 ├── requirements.txt                # azure-functions, pymssql
 ├── local.settings.example.json     # env template (no secrets)
 ├── database/database_setup.sql     # schema, index, sample data
-├── docs/architecture_diagram.png
+├── architecture_diagram.png
 ├── README.md
 └── .gitignore
 ```
