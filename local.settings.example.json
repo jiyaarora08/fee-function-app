@@ -1,0 +1,13 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "SQL_SERVER": "<your-sql-server>",
+    "SQL_DATABASE": "<your-database>",
+    "SQL_USER": "<your-sql-user>",
+    "SQL_PASSWORD": "<your-sql-password>",
+    "SENDER_EMAIL": "<your-sender-email>",
+    "GMAIL_APP_PASSWORD": "<your-gmail-app-password>"
+  }
+}

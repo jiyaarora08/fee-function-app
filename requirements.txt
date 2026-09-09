@@ -1,0 +1,3 @@
+# Pin versions to match local Python 3.12 environment; confirm against deployed Function App before release.
+azure-functions==1.25.0
+pymssql==2.4.1
