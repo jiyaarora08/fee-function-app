@@ -4,7 +4,7 @@
 <img width="663" height="540" alt="image" src="https://github.com/user-attachments/assets/0706a937-0963-40f7-8f70-036f2cce4785" />
 
 
-Until then, the deployed system can be described as follows. Only resources that were actually used are listed.
+The deployed system can be described as follows. Only resources that were actually used are listed.
 
 ## Student fee-status flow
 
