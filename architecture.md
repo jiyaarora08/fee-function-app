@@ -2,7 +2,8 @@
 
 The intended image for this folder is `docs/architecture_diagram.png`.
 
-No existing architecture diagram (PNG/SVG/JPG) was found in the project workspace when this documentation was added. **Do not treat this file as a substitute screenshot.** Add `architecture_diagram.png` here when a diagram is available.
+<img width="663" height="540" alt="image" src="https://github.com/user-attachments/assets/0706a937-0963-40f7-8f70-036f2cce4785" />
+
 
 Until then, the deployed system can be described as follows. Only resources that were actually used are listed.
 
