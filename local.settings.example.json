@@ -3,11 +3,12 @@
   "Values": {
     "AzureWebJobsStorage": "UseDevelopmentStorage=true",
     "FUNCTIONS_WORKER_RUNTIME": "python",
-    "SQL_SERVER": "<your-sql-server>",
-    "SQL_DATABASE": "<your-database>",
+    "SQL_SERVER": "<your-sql-server>.database.windows.net",
+    "SQL_DATABASE": "<your-database-name>",
     "SQL_USER": "<your-sql-user>",
     "SQL_PASSWORD": "<your-sql-password>",
-    "SENDER_EMAIL": "<your-sender-email>",
-    "GMAIL_APP_PASSWORD": "<your-gmail-app-password>"
+    "SENDER_EMAIL": "<verified-sendgrid-sender@example.com>",
+    "SENDGRID_API_KEY": "<your-sendgrid-api-key>",
+    "SENDGRID_TEMPLATE_ID": "<your-sendgrid-dynamic-template-id>"
   }
 }
