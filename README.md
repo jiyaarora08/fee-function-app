@@ -356,9 +356,6 @@ curl -X POST "https://<function-app>.azurewebsites.net/api/manage/students/1/upd
 
 ---
 
-## Demo
-
-See `DEMO_SCRIPT.md` for the recording script used for the submission demo (API functionality, reminders being sent, secure admin operations, and the self-access check).
 
 ---
 
