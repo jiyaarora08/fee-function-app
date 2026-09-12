@@ -189,9 +189,9 @@ Success (`200`) returns fee fields plus `status` and `updatedBy`.
 
 - Protected by **function key** at the Function App
 - Protected by **APIM subscription key** when called through API Management
-- **If** the request also carries a validated Easy Auth principal (a student or admin signed in via Entra ID), the caller may only view their own `StudentID` (matched against an `extension_StudentID` claim) unless they hold the `FeeAdmin` role.
-- **If there is no principal** (a raw function-key or APIM-key call with no signed-in user — e.g. a trusted backend integration), access is granted at the key level, same as before. This is a deliberate service-to-service trust boundary rather than per-user identity, and is called out here explicitly: a caller with only the shared key can still query any StudentID. Closing that fully would mean requiring Easy Auth on every GET call and dropping the raw-key path entirely, which the current setup does not do.
-- The `extension_StudentID` claim requires a custom claim/attribute mapping in the Entra ID app registration tying a signed-in student's identity to their `StudentID`. If student-level Entra accounts aren't provisioned for this assessment, self-scoped access is a documented forward-looking design rather than something exercised against real student logins.
+- **If** the request also carries a validated Easy Auth principal (a student or admin signed in via Entra ID), the caller may only view the student record whose registered `Email` matches their own sign-in `preferred_username` claim, unless they hold the `FeeAdmin` role.
+- **If there is no principal** (a raw function-key or APIM-key call with no signed-in user — e.g. a trusted backend integration), access is granted at the key level, same as before. This is a deliberate service-to-service trust boundary rather than per-user identity, and is called out here explicitly: a caller with only the shared key can still query any StudentID.
+- `preferred_username` is a standard Entra ID ID token claim populated automatically for every signed-in user (their UPN) — unlike a custom claim, it requires no extra app registration configuration. This has been tested end-to-end: a signed-in test account can view the student record matching its own email and receives a 403 on any other StudentID.
 
 ### Fee update (POST)
 

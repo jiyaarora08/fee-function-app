@@ -1,4 +1,4 @@
-<img width="1536" height="1024" alt="Fee Management System — Azure Architecture" src="https://github.com/user-attachments/assets/1ec3c8a4-21a7-470a-a7f5-8c4e3f2e5673" />
+![Fee Management System — Azure Architecture](architecture_diagram.png)
 
 ## Architecture notes
 
