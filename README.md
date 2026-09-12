@@ -82,14 +82,8 @@ fee-function-app/
 ├── requirements.txt                # pinned dependencies
 ├── local.settings.example.json     # env template (no secrets)
 ├── database/database_setup.sql     # schema, index, sample data
-<<<<<<< HEAD
-├── docs/architecture_diagram.png
-├── architecture.md                 # per-flow architecture notes
-├── DEMO_SCRIPT.md                  # recording script for the submission demo
-=======
 ├── architecture.md                 # architecture notes + embedded diagram
-├── architecture_diagram.png        # architecture diagram (tracked file)
->>>>>>> f14da6f355ca8df298ee81bae4f115fb58d7fe5f
+├── architecture_diagram.png        # architecture diagram
 ├── README.md
 └── .gitignore
 ```
